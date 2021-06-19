@@ -1,28 +1,48 @@
 {
-    "private": true,
-    "scripts": {
-        "dev": "npm run development",
-        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "watch": "npm run development -- --watch",
-        "watch-poll": "npm run watch -- --watch-poll",
-        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --disable-host-check --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "prod": "npm run production",
-        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
-    },
-    "devDependencies": {
-        "axios": "^0.19",
-        "bootstrap": "^4.5.3",
-        "cross-env": "^7.0.3",
-        "dropzone": "^5.7.2",
-        "jquery": "^3.5.1",
-        "laravel-mix": "^5.0.9",
-        "lodash": "^4.17.19",
-        "popper.js": "^1.16.1",
-        "resolve-url-loader": "^3.1.0",
-        "sass": "^1.30.0",
-        "sass-loader": "^8.0.2",
-        "vue": "^2.6.12",
-        "vue-template-compiler": "^2.6.12"
-    },
-    "dependencies": {}
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --disable-host-check --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^4.5.3",
+    "cross-env": "^7.0.3",
+    "dropzone": "^5.7.2",
+    "jquery": "^3.5.1",
+    "laravel-mix": "^6.0.23",
+    "lodash": "^4.17.21",
+    "popper.js": "^1.16.1",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.30.0",
+    "sass-loader": "^8.0.2",
+    "vue": "^2.6.12",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "dependencies": {
+    "workbox-build": "^6.1.5"
+  },
+  "name": "Market",
+  "version": "1.0.0",
+  "main": "webpack.mix.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aboodKahlous/Market.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aboodKahlous/Market/issues"
+  },
+  "homepage": "https://github.com/aboodKahlous/Market#readme",
+  "description": ""
 }

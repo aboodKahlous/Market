@@ -3,7 +3,7 @@
   <div class="container-fluid">
       <ul class="top-banner-list small">
         <li>
-          <a href="call:4222022">Call us:+4222022</a>
+          <a href="call:4222022">Call SY : 0997741497</a>
         </li>
         <li>
           <a href="{{route('register')}}">Sign up</a>

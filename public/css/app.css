@@ -11579,3 +11579,150 @@ body {
   color: #fd7e14;
 }
 
+
+/*       footer start           */
+
+.footer-top {
+  margin-top: 80px;
+  background-color: #2c2c2c;
+  padding: 80px 0 60px 0;
+  position: relative;
+}
+
+.footer-top h2 {
+  font-size: 20px;
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  letter-spacing: .64px;
+  color: #fff;
+}
+
+.footer-top p {
+  font-size: 15px;
+  font-family: lato, sans-serif;
+  line-height: 22px;
+  color: #b5b5b5;
+  letter-spacing: .3px;
+  padding: 25px 0 20px;
+}
+
+.footer-top .footer-info h4 {
+  font-size: 14px;
+  color: #f4b900;
+  font-weight: 700;
+  font-family: open sans, sans-serif;
+  padding-bottom: 10px;
+}
+
+.footer-info p {
+  font-size: 14px;
+  font-family: lato, sans-serif;
+  padding: 0;
+  color: #fff;
+  line-height: 28px;
+  padding-bottom: 32px;
+}
+
+.footer-info a {
+  text-decoration: none;
+}
+
+.footer-top li {
+  display: inline-block;
+}
+
+.footer-top ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-top ul i {
+  font-size: 14px;
+}
+
+.footer-top h4 {
+  color: #fff;
+  font-size: 15px;
+  font-family: montserrat, sans-serif;
+  -webkit-transition: all 300ms linear 0s;
+  -o-transition: all 300ms linear 0s;
+  transition: all 300ms linear 0s;
+}
+
+.footer-top h5 {
+  font-size: 12px;
+  font-family: montserrat, sans-serif;
+  color: #c3c3c3;
+  padding: 9px 0 8px;
+}
+
+.footer-top ul>li>i {
+  color: #d9534f;
+}
+
+.footer-top a {
+  display: block;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-gallery a img {
+  width: 100%;
+}
+
+.footer-gallery li {
+  width: calc(100%/3);
+  float: left;
+}
+
+.footer-top h6 {
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  padding-bottom: 13px;
+  padding-top: 30px;
+}
+
+.footer-top .view {
+  font: 400 13px/24px "Lato", sans-serif;
+  font-weight: 700;
+  color: #fde428;
+  margin-top: 25px;
+  display: inline-block;
+}
+
+.footer-bottom {
+  background: #131313;
+}
+
+.footer-bottom {
+  padding: 30px 0;
+}
+
+.footer-bottom .f-text {
+  font: 400 11px/20px "Montserrat", sans-serif;
+  letter-spacing: 1.1px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer-bottom #scroolup {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  display: none;
+}
+
+.footer-bottom #scroolup i {
+  font-size: 60px;
+  cursor: pointer;
+  color: #d9534f;
+  z-index: 99999;
+}
+
+
+/*    footer end   */

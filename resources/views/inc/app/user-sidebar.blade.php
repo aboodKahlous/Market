@@ -18,11 +18,6 @@
     </a>
   </li>
   <li class="list-group-item-action list-group-item">
-    <a href="{{route('myCancellation.index')}}">
-      <i class="fas fa-window-close text-primary"></i> Cancellations
-    </a>
-  </li>
-  <li class="list-group-item-action list-group-item">
     <a href="{{route('customerQuestion.index')}}">
       <i class="fas fa-align-left text-primary"></i> My queries
     </a>

@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-auto"> 
-          <h6 class="text-center"><b>Still have more questions ?</b></h6><small class="text-muted">Call/Text <span class="mx-2"><b>+4221221</b></span>and with real person.</small>
+          <h6 class="text-center"><b>Still have more questions ?</b></h6><small class="text-muted">Call/Text <span class="mx-2"><b>+997741497</b></span>and with real person.</small>
        </div>
     </div>
     <footer>
@@ -92,3 +92,163 @@
     </footer>
   </div>
 </div>
+
+           <!-- start footer -->
+
+<!-- <div class="footer-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-xs-12">
+                <h2>Mar<span style="color: #f4b900;">Market</span></h2>
+                <p class="p">Before we talk destination, we shine a spotlight across your organization to fully understand its people, processes</p>
+                <div class="footer-info">
+                    <h4>
+                        <i class="fa fa-map-marker"></i> Postal Address:
+                    </h4>
+
+                    <p>PO Box 16122 Collins Street West Victoria 8007 Australia</p>
+                    <h4>>
+                        <i class="fa fa-phone"></i>Business Phone:
+                    </h4>
+                    <a href="#">
+                        <p>+963- 0997-741-497</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6">
+                <h2>TOP RATED <span style="color: #f4b900;">PRODUCTS</span></h2>
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="{{asset('images/footer/card2.jpg')}}" width="80px" height="80px">
+                    </a>
+                    <div class="media-body">
+                        <h4>Creator Of Quality</h4>
+                        <h5>£125.00</h5>
+                        <ul>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="{{asset('images/footer/card3.jpg')}}" width="80px" height="80px">
+                    </a>
+                    <div class="media-body">
+                        <h4>Creator Of Quality</h4>
+                        <h5>£125.00</h5>
+                        <ul>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="{{asset('images/footer/card1.jpg')}}" width="80px" height="80px">
+                    </a>
+                    <div class="media-body">
+                        <h4>Creator Of Quality</h4>
+                        <h5><del>£109.00  </del> £125.00</h5>
+                        <ul>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6">
+                <h2>OUr <span style="color: #f4b900;">PRODUCTS</span></h2>
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="{{asset('images/footer/card4.jpg')}}" width="80px" height="80px">
+                    </a>
+                    <div class="media-body">
+                        <h4>Creator Of Quality</h4>
+                        <h5>£125.00</h5>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="{{asset('images/footer/card5.jpg')}}" width="80px" height="80px">
+                    </a>
+                    <div class="media-body">
+                        <h4>Creator Of Quality</h4>
+                        <h5>£125.00</h5>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="{{asset('images/footer/card7.jpg')}}" width="80px" height="80px">
+                    </a>
+                    <div class="media-body">
+                        <h4>Creator Of Quality</h4>
+                        <h5><del>£109.00  </del> £125.00</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-xs-12">
+                <h2>TOP RATED <span>PRODUCTS</span></h2>
+                <ul class="footer-gallery">
+                    <li>
+                        <a href="#"><img src="{{asset('images/footer/gallery-1.png')}}" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="{{asset('images/footer/gallery-2.png')}}" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="{{asset('images/footer/gallery-3.png')}}" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="{{asset('images/footer/gallery-4.png')}}" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="{{asset('images/footer/gallery-5.png')}}" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="{{asset('images/footer/gallery-6.png')}}" alt=""></a>
+                    </li>
+
+                </ul>
+                <a href="#" class="view"><i class="fa fa-arrow-circle-o-right"></i>View More images</a>
+                <h6>Subscribe to rss</h6>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Type your email">
+                    <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><i class="fa fa-rss" aria-hidden="true"></i></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="footer-bottom">
+    <div class="container">
+        <h4 class="f-text"> Copyright © 2020 . Powered By <span style="color:#f4b900 ;">Obada Kahlous</h4></span>
+    </div>
+    <div id="scroolup">
+        <i class="fa fa-angle-double-up"></i>
+    </div>
+</div> -->
+
+<!-- end footer -->
+    
