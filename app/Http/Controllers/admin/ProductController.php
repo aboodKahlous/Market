@@ -40,19 +40,36 @@ class ProductController extends Controller
         ]);
 
         DB::transaction(function()use($request){
-            $product = Product::create([
-                'title'=>$request->title,
-                'description'=>$request->description,
-                'slug'=>Str::slug($request->title),
-                'product_code'=>Str::random(8),
-                'price'=>$request->price,
-                'discount'=>$request->discount,
-                'brand'=>$request->brand??'',
-                'warranty'=>$request->warranty?? null,
-                'subCategory_id'=>$request->subCategory_id,
-                'user_id'=>auth()->id(),
-                'status'=>$request->status,
-            ]);
+            $product = Product::where('title',$request->title)->first();
+            if($product){
+                $product->update([
+                    'title'=>$request->title,
+                    'description'=>$request->description,
+                    'slug'=>Str::slug($request->title),
+                    'product_code'=>Str::random(8),
+                    'price'=>$request->price,
+                    'discount'=>$request->discount,
+                    'brand'=>$request->brand??'',
+                    'warranty'=>$request->warranty?? null,
+                    'subCategory_id'=>$request->subCategory_id,
+                    'user_id'=>auth()->id(),
+                    'status'=>$request->status,
+                ]);
+            }else{
+                $product = Product::create([
+                    'title'=>$request->title,
+                    'description'=>$request->description,
+                    'slug'=>Str::slug($request->title),
+                    'product_code'=>Str::random(8),
+                    'price'=>$request->price,
+                    'discount'=>$request->discount,
+                    'brand'=>$request->brand??'',
+                    'warranty'=>$request->warranty?? null,
+                    'subCategory_id'=>$request->subCategory_id,
+                    'user_id'=>auth()->id(),
+                    'status'=>$request->status,
+                ]);
+            }
             
 
             $attributes = json_decode($request->attr);

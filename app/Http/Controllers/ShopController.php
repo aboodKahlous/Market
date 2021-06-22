@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Carousel;
 use App\Models\FlashSale;
+use App\Models\ProductImage;
+
 use App\Models\User;
 use Illuminate\Http\Request;
 use App\Models\Product;
@@ -24,7 +26,19 @@ class ShopController extends Controller
             }
         }
         $carousels = Carousel::latest()->take(3)->get();
-        $newProducts = Product::inRandomOrder()->with('productImage')->take(24)->get();
+        $newProducts = Product::inRandomOrder()->get();
+       //......//
+       //get imges products
+        foreach($newProducts as $pro){
+            $image = ProductImage::where('product_id',$pro->id)->first();
+            $img = '';
+            if($image)
+            $img = $image->original;
+            $pro->productImage = $img;
+        }
+
+        //......//
+
         return view('shop.index')->with([
             'carousels' => $carousels,
             'newProducts' => $newProducts,

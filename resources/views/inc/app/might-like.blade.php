@@ -8,7 +8,7 @@
                 <div class="col-sm-6 col-md-2 col-6">
                     <a href="{{$product->path()}}">
                         <div class="card shadow-hover">
-                            <img src="{{asset($product->productImage->first()->original)}}" alt="product" class="card-img-top">
+                            {{-- <img src="{{asset($product->productImage->first()->original)}}" alt="product" class="card-img-top"> --}}
                             <div class="card-body">
                                 <p>{{ $product->title }}</p>
                                 @if($product->onSale)

@@ -143,7 +143,7 @@
       <div class="col-6 col-sm-4 col-md-2 p-2">
         <a href="{{$product->path()}}">
         <div class="card shadow-hover h-100" >
-          <img src="{{asset($product->productImage->first()->original)}}" class="card-img-top" alt="">
+          <img src="{{asset($product->productImage)}}" class="card-img-top" alt="">
           <div class="card-body ">
             <p class="product-title">{{substr($product->title,0,35)}}..</p>
             <p class="product-price">Rs.{{number_format($product->price)}}</p>
