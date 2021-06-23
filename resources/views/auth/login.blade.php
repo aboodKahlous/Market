@@ -39,13 +39,6 @@
                         <button type="submit" class="btn btn-orange btn-block ">Login</button>
         
                         <div class=" my-2"><span>Don't have a account? <a href="{{route('register')}}">Create</a> here.</span></div>
-        
-                        <p class="text-center">or</p>
-        
-                        <div class="my-4">
-                            <a href="#loginUsingFacebook" class="btn  btn-block btn-facebook">Facebook</a>
-                            <a href="#loginUsingGoogle" class="btn  btn-block btn-google">Google</a>
-                        </div>
                      </div>
                  </div>
    

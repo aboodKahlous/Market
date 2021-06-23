@@ -60,7 +60,10 @@
   @endif --}}
 
   {{-- categories-section --}}
-  <section class="categories-section container my-4 h-100">
+
+
+
+  {{-- <section class="categories-section container my-4 h-100">
     <h3>Categories</h3>
       <div class="row h-100">
         
@@ -132,15 +135,15 @@
 
       </div>
     </div>
-  </section>
+  </section> --}}
 
   {{-- just for you --}}
   <section class="just-for-you-section container h-100 my-4">
-    <h3>Just For You</h3>
+    <h2 class="text-center text-capitalize">Just For You<span>.</span> </h2>
     <div class="row h-100">
       @foreach($newProducts as $product)
       @if($product->status != 0)
-      <div class="col-6 col-sm-4 col-md-2 p-2">
+      <div class="col-md-3 col-sm-4 col-md-2 p-2">
         <a href="{{$product->path()}}">
         <div class="card shadow-hover h-100" >
           <img src="{{asset($product->productImage)}}" class="card-img-top" alt="">
@@ -158,7 +161,7 @@
   
     <div class="d-flex justify-content-center mt-5">
       <div class="text-center">
-        <h2>Didn't Find Your Match</h2>
+        <h2 class="text-center text-capitalize">Didn't Find Your Match<span>.</span> </h2>
         <a href="{{route('shop.catalog')}}" class="btn btn-orange">Search for It</a>
       </div>
     </div>

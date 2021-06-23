@@ -1,4 +1,4 @@
-<div class="footer-main-box mt-5 pt-5 bg-light">
+{{-- <div class="footer-main-box mt-5 pt-5 bg-light">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-auto"> 
@@ -91,15 +91,15 @@
       </div>
     </footer>
   </div>
-</div>
+</div> --}}
 
            <!-- start footer -->
 
-<!-- <div class="footer-top">
+<div class="footer-top">
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-xs-12">
-                <h2>Mar<span style="color: #f4b900;">Market</span></h2>
+                <h2>Mar<span style="color: #f4b900;">t</span></h2>
                 <p class="p">Before we talk destination, we shine a spotlight across your organization to fully understand its people, processes</p>
                 <div class="footer-info">
                     <h4>
@@ -125,13 +125,7 @@
                     <div class="media-body">
                         <h4>Creator Of Quality</h4>
                         <h5>£125.00</h5>
-                        <ul>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                        </ul>
+                        
                     </div>
                 </div>
 
@@ -142,13 +136,7 @@
                     <div class="media-body">
                         <h4>Creator Of Quality</h4>
                         <h5>£125.00</h5>
-                        <ul>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                        </ul>
+                       
                     </div>
                 </div>
 
@@ -159,19 +147,13 @@
                     <div class="media-body">
                         <h4>Creator Of Quality</h4>
                         <h5><del>£109.00  </del> £125.00</h5>
-                        <ul>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                        </ul>
+                       
                     </div>
                 </div>
             </div>
 
             <div class="col-md-3 col-xs-6">
-                <h2>OUr <span style="color: #f4b900;">PRODUCTS</span></h2>
+                <h2>Our <span style="color: #f4b900;">PRODUCTS</span></h2>
                 <div class="media">
                     <a class="pull-left" href="#">
                         <img class="media-object" src="{{asset('images/footer/card4.jpg')}}" width="80px" height="80px">
@@ -248,7 +230,7 @@
     <div id="scroolup">
         <i class="fa fa-angle-double-up"></i>
     </div>
-</div> -->
+</div> 
 
 <!-- end footer -->
     
