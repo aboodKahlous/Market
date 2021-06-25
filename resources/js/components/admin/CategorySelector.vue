@@ -6,7 +6,7 @@
         <select
           class="form-control"
           @change="categorySelected"
-          required
+          
           name="category_id"
         >
           <option>Choose a category</option>

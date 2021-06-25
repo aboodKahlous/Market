@@ -1,3 +1,4 @@
+{{-- 
 <div class="might-like-section">
   <div class="container">
       <h3>You might also like...</h3>
@@ -8,7 +9,7 @@
                 <div class="col-sm-6 col-md-2 col-6">
                     <a href="{{$product->path()}}">
                         <div class="card shadow-hover">
-                            {{-- <img src="{{asset($product->productImage->first()->original)}}" alt="product" class="card-img-top"> --}}
+                            <img src="{{asset($product->productImage->first()->original)}}" alt="product" class="card-img-top">
                             <div class="card-body">
                                 <p>{{ $product->title }}</p>
                                 @if($product->onSale)
@@ -27,4 +28,4 @@
       </div>
   
   </div>
-</div>
+</div> --}}

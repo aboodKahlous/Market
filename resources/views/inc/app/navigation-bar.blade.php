@@ -1,4 +1,4 @@
-{{-- @guest
+@guest
 <section class="top-banner bg-light my-0 py-2">
   <div class="container-fluid">
       <ul class="top-banner-list small">
@@ -8,16 +8,16 @@
         <li>
           <a href="{{route('register')}}">Sign up</a>
         </li>
-        <li>
+        {{-- <li>
           <a href="{{route('login')}}">Login</a>
-        </li>
+        </li> --}}
         <li class="active">
           <a href="{{route('myOrder.index')}}">Track my order</a>
         </li>
       </ul>
   </div>
 </section>
-@endguest --}}
+@endguest
 
 <header class="section-header sticky-top my-0 py-0">
   <section class="header-main border-bottom">
