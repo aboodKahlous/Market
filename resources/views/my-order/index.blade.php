@@ -10,7 +10,7 @@
       @include('inc.app.user-sidebar')
     </div>
 
-    <div class="col-xl-8 col-md-8 col-sm-12 mr-auto">
+    <div class="col-xl-10 col-md-8 col-sm-12 mr-auto">
       <div class="card shadow">
         <div class="card-header bg-light border-bottom">
           <p class="mb-0 ">My Orders</p>

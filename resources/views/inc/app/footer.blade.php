@@ -208,14 +208,7 @@
                     </li>
 
                 </ul>
-                <a href="#" class="view"><i class="fa fa-arrow-circle-o-right"></i>View More images</a>
-                <h6>Subscribe to rss</h6>
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Type your email">
-                    <span class="input-group-btn">
-                    <button class="btn btn-default" type="button"><i class="fa fa-rss" aria-hidden="true"></i></button>
-                    </span>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -225,7 +218,7 @@
 
 <div class="footer-bottom">
     <div class="container">
-        <h4 class="f-text"> Copyright © 2020 . Powered By <span style="color:#f4b900 ;">Obada Kahlous</h4></span>
+        <h4 class="f-text"> Copyright © 2021 . Powered By <span style="color:#f4b900 ;">Obada Kahlous</h4></span>
     </div>
     <div id="scroolup">
         <i class="fa fa-angle-double-up"></i>

@@ -10,7 +10,7 @@
       @include('inc.app.user-sidebar')
     </div>
 
-    <div class="col-xl-8 col-md-8 col-sm-12 mr-auto">
+    <div class="col-xl-10 col-md-8 col-sm-12 mr-auto">
       <div class="card shadow">
         <div class="card-header bg-light border-bottom">
           <p class="mb-0 ">Product queries</p>
@@ -18,7 +18,7 @@
 
         <div class="card-body" style="min-height: 40vh">
              
-          <div class="table-responsive">
+          <div class="table-responsive table-hover">
             <table class="table table-hover table-striped">
               <thead>
                 <tr>

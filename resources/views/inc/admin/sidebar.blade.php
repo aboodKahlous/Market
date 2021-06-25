@@ -50,7 +50,7 @@
   @endrole
 
   <!-- Nav Item - Utilities Collapse Menu -->
-  <!-- <li class="nav-item {{ request()->segment(1) == 'orders' ? 'active': ''}}">
+ {{-- <li class="nav-item {{ request()->segment(1) == 'orders' ? 'active': ''}}">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#ordersCollapse" aria-expanded="true" aria-controls="ordersCollapse">
       <i class="fas fa-fw fa-people-carry"></i>
       <span>Orders</span>
@@ -66,7 +66,7 @@
         <a class="collapse-item" href="{{route('returned.index')}}">Returned</a>
       </div>
     </div>
-  </li> -->
+  </li>  --}}
 
   @role('admin')
   <!-- Nav Item - Utilities Collapse Menu -->

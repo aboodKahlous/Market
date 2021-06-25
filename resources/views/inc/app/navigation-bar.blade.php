@@ -1,4 +1,4 @@
-@guest
+{{-- @guest
 <section class="top-banner bg-light my-0 py-2">
   <div class="container-fluid">
       <ul class="top-banner-list small">
@@ -17,7 +17,7 @@
       </ul>
   </div>
 </section>
-@endguest
+@endguest --}}
 
 <header class="section-header sticky-top my-0 py-0">
   <section class="header-main border-bottom">

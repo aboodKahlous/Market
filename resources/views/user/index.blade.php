@@ -3,14 +3,14 @@
 @section('page-title','User Account')
 
 @section('content')
-<div class="container-fluid py-3" style="min-height: 80vh">
+<div class="container-fluid py-3" >
   <div class="row no-gutters">
 
-    <div class="col-xl-2 col-md-2 col-sm-12 ml-auto">
+    <div class="col-xl-2 col-md-2 col-sm-12 ml-auto list-user">
       @include('inc.app.user-sidebar')
     </div>
 
-    <div class="col-xl-8 col-md-8 col-sm-12 mr-auto">
+    <div class="col-xl-10 col-md-8 col-sm-12 mr-auto info">
       <div class="card shadow">
         <div class="card-header bg-light border-bottom">
           <p class="mb-0 ">My account</p>
