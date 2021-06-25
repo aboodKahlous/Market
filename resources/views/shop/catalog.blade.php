@@ -41,9 +41,9 @@
                   <p class="text-dark">{{$product->title}}</p>
                   @if($product->onSale)
                     <small class="line-through text-dark">{{$product->price}}</small>
-                    <p class="text-orange py-0 my-0 h5">Rs.{{number_format($product->sale_price)}}</p>
+                    <p class="text-orange py-0 my-0 h5">SY.{{number_format($product->sale_price)}}</p>
                   @else
-                    <p class="text-orange py-0 my-0 h5">Rs.{{number_format($product->price)}}</p>
+                    <p class="text-orange py-0 my-0 h5">SY.{{number_format($product->price)}}</p>
                   @endif
                 </div>
                   <button class="btn btn-orange btn-block">Add to cart</button>

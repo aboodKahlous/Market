@@ -95,7 +95,7 @@
           <img src="{{asset($product->productImage)}}" class="card-img-top" alt="">
           <div class="card-body ">
             <p class="product-title">{{substr($product->title,0,35)}}..</p>
-            <p class="product-price">Rs.{{number_format($product->price)}}</p>
+            <p class="product-price">SY.{{number_format($product->price)}}</p>
           </div>
         </div>
         </a>
