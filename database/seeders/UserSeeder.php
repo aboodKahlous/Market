@@ -33,6 +33,12 @@ class UserSeeder extends Seeder
                 'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
                 'role' => 'shipper'
             ],
+            [
+                'name' => 'Info',
+                'email' => 'info@insoftonline.de',
+                'password' => '12345@asd', // password
+                'role' => 'shipper'
+            ],
         ];
 
         foreach ($factoryUsers as $user) {

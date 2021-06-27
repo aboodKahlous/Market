@@ -1,25 +1,30 @@
 <?php
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\OrderApiController;
-use App\Http\Controllers\Api\ProductApiController;
-use App\Http\Controllers\Api\ShippedApiController;
-use App\Http\Controllers\Api\ReturnedApiController;
+use App\Http\Controllers\Api\CustomerQuestionApiController;
 use App\Http\Controllers\Api\DeliveredApiController;
 use App\Http\Controllers\Api\FlashSaleApiController;
-use App\Http\Controllers\Admin\ProductImageController;
+use App\Http\Controllers\Api\OrderApiController;
+use App\Http\Controllers\Api\ProductApiController;
 use App\Http\Controllers\Api\ReadyToShipApiController;
+use App\Http\Controllers\Api\ReturnedApiController;
 use App\Http\Controllers\Api\ShipCancelledApiController;
+use App\Http\Controllers\Api\ShippedApiController;
 use App\Http\Controllers\Api\UserManagementApiController;
-use App\Http\Controllers\Api\CustomerQuestionApiController;
+use App\Http\Controllers\Api\UsersController;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::post('/login', [UsersController::class, 'login']);
+Route::post('/register', [UsersController::class, 'register']);
+Route::get('/logout', [UsersController::class, 'logout'])->middleware('auth:api');
+
 //products
 Route::get('/product/all', [ProductApiController::class, 'all'])->name('product.all');
+Route::get('/product/{id}', [ProductApiController::class, 'getById'])->name('product.getById');
 Route::get('/product/onsale/invert/{id}', [ProductApiController::class, 'onSaleInvert'])->name('product.onSaleInvert');
 Route::get('/product/live/invert/{id}', [ProductApiController::class, 'liveInvert'])->name('product.liveInvert');
 
@@ -49,5 +54,3 @@ Route::get('/ship/cancelled/all', [ShipCancelledApiController::class, 'all'])->n
 
 //usermangement api
 Route::get('/user-management/all', [UserManagementApiController::class, 'all'])->name('userManagement.all');
-
-
