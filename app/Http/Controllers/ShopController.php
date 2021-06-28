@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Carousel;
-use App\Models\FlashSale;
 use App\Models\ProductImage;
 
 use App\Models\User;

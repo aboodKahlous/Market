@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Models\FlashSale;
 use Yajra\DataTables\DataTables;
 
 class FlashSaleApiController extends Controller

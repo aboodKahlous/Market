@@ -12,7 +12,6 @@ use App\Http\Controllers\Admin\CarouselController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ReturnedController;
 use App\Http\Controllers\Admin\DeliveredController;
-use App\Http\Controllers\Admin\FlashSaleController;
 use App\Http\Controllers\Admin\AdminLoginController;
 use App\Http\Controllers\Admin\ReadyToShipController;
 use App\Http\Controllers\Admin\ProductImageController;
@@ -73,13 +72,6 @@ Route::group(['prefix'=>'/admin','middleware' => ['auth', 'role:admin']], functi
   Route::get('/customer-question/{id}/reply', [CustomerQuestionController::class, 'adminReply'])->name('customerQuestion.adminReply');
   Route::post('/customer-question', [CustomerQuestionController::class, 'massDelete'])->name('customerQuestion.massDelete');
   Route::put('/customer-question/{id}/reply', [CustomerQuestionController::class, 'reply'])->name('customerQuestion.reply');
-
-  Route::get('/flash-sale', [FlashSaleController::class, 'index'])->name('flashSale.index');
-  Route::get('/flash-sale/create', [FlashSaleController::class, 'create'])->name('flashSale.create');
-  Route::post('/flash-sale', [FlashSaleController::class, 'store'])->name('flashSale.store');
-  Route::get('/flash-sale/{id}/edit', [FlashSaleController::class, 'edit'])->name('flashSale.edit');
-  Route::put('/flash-sale/{id}', [FlashSaleController::class, 'update'])->name('flashSale.update');
-  Route::delete('/flash-sale', [FlashSaleController::class, 'destroy'])->name('flashSale.destroy');
 
   Route::get('/user-management', [UserManagementController::class, 'index'])->name('userManagement.index');
   Route::post('/user-management', [UserManagementController::class, 'store'])->name('userManagement.store');

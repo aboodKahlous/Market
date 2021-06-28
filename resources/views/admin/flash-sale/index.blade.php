@@ -3,40 +3,6 @@
 @section('content')
 <div class="container-fluid">
   
-  <div class="card shadow mb-4">
-    <div class="card-header py-3">
-      <h6 class="m-0 font-weight-bold text-primary">Flash sale Products</h6>
-    </div>
-    <div class="card-body">
-
-      <div class="mb-3">
-          <div class="form-group">
-            <label for="">Select all</label>
-            <input type="checkbox" class="selectall">
-          </div>
-          <a href="{{route('flashSale.create')}}" class="btn btn-sm btn-primary">Add product</a>
-      </div>
-      <form action="" method="POST" id="selectorForm">
-        @csrf
-        <div class="table-responsive">
-          <table class="table table-hover table-bordered small" id="dataTable" width="100%" cellspacing="0">
-            <thead>
-              <tr>
-                <th>Select</th>
-                <th>Product title</th>
-                <th>Product price</th>
-                <th>flash price</th>
-                <th>Created at</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </div>
-      </form>
-    </div>
-  </div>
-
 </div>
 @endsection
 

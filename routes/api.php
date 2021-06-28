@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\Api\CustomerQuestionApiController;
 use App\Http\Controllers\Api\DeliveredApiController;
-use App\Http\Controllers\Api\FlashSaleApiController;
 use App\Http\Controllers\Api\OrderApiController;
 use App\Http\Controllers\Api\ProductApiController;
 use App\Http\Controllers\Api\ReadyToShipApiController;
@@ -27,9 +26,6 @@ Route::get('/product/all', [ProductApiController::class, 'all'])->name('product.
 Route::get('/product/{id}', [ProductApiController::class, 'getById'])->name('product.getById');
 Route::get('/product/onsale/invert/{id}', [ProductApiController::class, 'onSaleInvert'])->name('product.onSaleInvert');
 Route::get('/product/live/invert/{id}', [ProductApiController::class, 'liveInvert'])->name('product.liveInvert');
-
-//campaign flash sale
-Route::get('/flash-sale/all', [FlashSaleApiController::class, 'all'])->name('flashSale.all');
 
 //customer question
 Route::get('/customer-question/all', [CustomerQuestionApiController::class, 'all'])->name('customerQuestion.all');

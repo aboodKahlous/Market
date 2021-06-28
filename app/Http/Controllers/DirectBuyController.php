@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\FlashSale;
 use App\Models\Order;
 use Carbon\Carbon;
 use RealRashid\SweetAlert\Facades\Alert;
@@ -16,7 +15,6 @@ class DirectBuyController extends Controller
     }
     public function order(Request $request)
     {
-        $flashProduct = FlashSale::where('id', $request->id)->with('product')->first();
         $order = new Order();
         $order->user_id = auth()->user()->id;
         $order->product_id = $request->id;
