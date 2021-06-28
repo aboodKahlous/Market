@@ -24,6 +24,11 @@ Route::get('/logout', [UsersController::class, 'logout'])->middleware('auth:api'
 //products
 Route::get('/product/all', [ProductApiController::class, 'all'])->name('product.all');
 Route::get('/product/{id}', [ProductApiController::class, 'getById'])->name('product.getById');
+
+Route::get('/product/{id}/images', [ProductApiController::class, 'getImagesById'])->name('product.getImagesById');
+Route::get('/product/{id}/images/first', [ProductApiController::class, 'getFirstImageById'])->name('product.getFirstImageById');
+Route::get('/search/product', [ProductApiController::class, 'search'])->name('product.search');
+
 Route::get('/product/onsale/invert/{id}', [ProductApiController::class, 'onSaleInvert'])->name('product.onSaleInvert');
 Route::get('/product/live/invert/{id}', [ProductApiController::class, 'liveInvert'])->name('product.liveInvert');
 

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Models\Product;
 use App\Traits\ResponseTrait;
+use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
 use Yajra\DataTables\DataTables;
 
@@ -67,8 +68,49 @@ class ProductApiController extends Controller
     {
         $product = Product::find($id);
         if ($product)
-            return $this->returnWithSuccess($product, 'Product Retrieved Successfully', 200);
+            return $this->returnWithSuccess($product, 'product retrieved successfully', 200);
         else
-            return $this->returnWithFailed(null, 'No Product With This Id', 200);
+            return $this->returnWithFailed(null, 'No product with this id', 200);
+    }
+
+    /**
+     * @param $id
+     * @return JsonResponse
+     */
+    public function getImagesById($id)
+    {
+        $images = Product::find($id)->getImages;
+        if ($images)
+            return $this->returnWithSuccess($images, 'Product images retrieved successfully', 200);
+        else
+            return $this->returnWithFailed(null, 'No images for this product', 200);
+    }
+
+    /**
+     * @param $id
+     * @return JsonResponse
+     */
+    public function getFirstImageById($id)
+    {
+        $image = Product::find($id)->first_image;
+        if ($image)
+            return $this->returnWithSuccess($image, 'Product image retrieved successfully', 200);
+        else
+            return $this->returnWithFailed(null, 'No images for this product', 200);
+    }
+
+    /**
+     * @param Request $request
+     * @return JsonResponse
+     */
+    public function search(Request $request) {
+
+        $request->validate(['title'=>'required']);
+
+        $title = $request->get('title');
+        if ($title) {
+            $products = Product::where('title', 'like',"%{$title}%")->get();
+            return $this->returnWithSuccess($products, 'Successful Get Products');
+        }
     }
 }

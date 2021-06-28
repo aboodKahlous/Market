@@ -20,7 +20,7 @@ class Product extends Model
     public function category(){
         return $this->belongsTo('App\Models\Category','subCategory_id','id');
     }
-    
+
     // public function getAttribute($attr){
     //     return $this->attributes()->where('type',$attr);
     // }
@@ -35,7 +35,7 @@ class Product extends Model
         return $this->hasMany('App\Models\ProductImage')->limit(1);
     }
 
-    public function getImage()
+    public function getImages()
     {
         return $this->productImage();
     }

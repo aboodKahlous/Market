@@ -14,7 +14,7 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        $factoryUsers = [
+        $Users = [
             [
                 'name' => 'Admin',
                 'email' => 'admin@admin.com',
@@ -41,7 +41,7 @@ class UserSeeder extends Seeder
             ],
         ];
 
-        foreach ($factoryUsers as $user) {
+        foreach ($Users as $user) {
             $newUser =  User::create([
                 'name' => $user['name'],
                 'email' => $user['email'],
